@@ -1,0 +1,479 @@
+<resources>
+    <string name="app_name">MACBAN REGISTRATION</string>
+    <string name="my_image">MY IMAGE</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="welcome_screen">WELCOME</string>
+    <string name="sign_up">CREATE USER</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="add_new">ADD NEW</string>
+    <string name="personal_data">Personal Data</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password_">Password</string>
+    <string name="surname">Surname</string>
+    <string name="first_name">First Name</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="marital_status">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>Adamawa</item>
+        <item>Baucho</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Gombe</item>
+        <item>Jigawa</item>
+        <item>Kano</item>
+        <item>Katsina</item>
+        <item>Kaduna</item>
+        <item>Kebbi</item>
+        <item>Kogi</item>
+        <item>Kwara</item>
+        <item>Nassarawa</item>
+        <item>Niger</item>
+        <item>Plateau</item>
+        <item>Sokoto</item>
+        <item>Taraba</item>
+        <item>Yobe</item>
+        <item>Zamfara</item>
+    </string-array>
+
+    <string-array name="lga_kwara">
+        <item>Asa</item>
+        <item>Baruten</item>
+        <item>Edu</item>
+        <item>Ekiti</item>
+        <item>Ifelodun</item>
+        <item>Ilorin East</item>
+        <item>Ilorin South</item>
+        <item>Ilorin West</item>
+        <item>Irepodun</item>
+        <item>Isin</item>
+        <item>Kaiama</item>
+        <item>Moro</item>
+        <item>Offa</item>
+        <item>Oke Ero</item>
+        <item>Oyun</item>
+        <item>Pategi</item>
+    </string-array>
+
+    <string-array name="lga_benue">
+        <item>Ado</item>
+        <item>Agatu</item>
+        <item>Apa</item>
+        <item>Buruku</item>
+        <item>Gboko</item>
+        <item>Guma</item>
+        <item>Gwer East</item>
+        <item>Gwer West</item>
+        <item>Katsina-Ala</item>
+        <item>Konshisha</item>
+        <item>Kwande</item>
+        <item>Logo</item>
+        <item>Makurdi</item>
+        <item>Obi</item>
+        <item>Ogbadibo</item>
+        <item>Ohimini</item>
+        <item>Oju</item>
+        <item>Okpokwu</item>
+        <item>Otukpo</item>
+        <item>Tarka</item>
+        <item>Ukum</item>
+        <item>Ushongo</item>
+        <item>Vandeikya</item>
+    </string-array>
+
+    <string-array name="lga_yobe">
+        <item>Bade</item>
+        <item>Bursari</item>
+        <item>Damaturu</item>
+        <item>Fika</item>
+        <item>Fune</item>
+        <item>Geidam</item>
+        <item>Gujba</item>
+        <item>Gulani</item>
+        <item>Jakusko</item>
+        <item>Karasuwa</item>
+        <item>Karawa</item>
+        <item>Machina</item>
+        <item>Nangere</item>
+        <item>Nguru Potiskum</item>
+        <item>Tarmua</item>
+        <item>Yunusari</item>
+        <item>Yusufari</item>
+    </string-array>
+
+    <string-array name="lga_jigawa">
+        <item>Auyo</item>
+        <item>Birniwa</item>
+        <item>Babura</item>
+        <item>Buji</item>
+        <item>Birnin Kudu</item>
+        <item>Dutse</item>
+        <item>Gumel</item>
+        <item>Gwaram</item>
+        <item>Gwiwa</item>
+        <item>Gagarawa</item>
+        <item>Guri</item>
+        <item>Garki</item>
+        <item>Hadejia</item>
+        <item>Jahun</item>
+        <item>Kiri Kasamma</item>
+        <item>Kafin Hausa</item>
+        <item>Kazaure</item>
+        <item>Kiyawa</item>
+        <item>Kaugama</item>
+        <item>Malam Madori</item>
+        <item>Miga</item>
+        <item>Maigatari</item>
+        <item>Roni</item>
+        <item>Sule Tankarkar</item>
+        <item>Taura</item>
+        <item>Yankwashi</item>
+    </string-array>
+
+    <string-array name="lga_plateau">
+        <item>Barikin Ladi</item>
+        <item>Bassa</item>
+        <item>Bokkos</item>
+        <item>Jos East</item>
+        <item>Jos North</item>
+        <item>Jos South</item>
+        <item>Kanam</item>
+        <item>Kanke</item>
+        <item>Langtang North</item>
+        <item>Langtang South</item>
+        <item>Mangu</item>
+        <item>Mikang</item>
+        <item>Pankshin</item>
+        <item>Qua'an Pan</item>
+        <item>Riyom</item>
+        <item>Shendam</item>
+        <item>Wase</item>
+    </string-array>
+
+    <string-array name="lga_kebbi">
+        <item>Aleiro</item>
+        <item>Arewa Dandi</item>
+        <item>Argungun</item>
+        <item>Augie</item>
+        <item>Bagudo</item>
+        <item>Birnin Kebbi</item>
+        <item>Bunza</item>
+        <item>Dandi</item>
+        <item>Fakai</item>
+        <item>Gwandu</item>
+        <item>Jega</item>
+        <item>Kalgo</item>
+        <item>Koko/Besse</item>
+        <item>Maiyama</item>
+        <item>Ngaski</item>
+        <item>Sakaba</item>
+        <item>Shanga</item>
+        <item>Suru</item>
+        <item>Danko/Wasagu</item>
+        <item>Yauri</item>
+        <item>Zuru</item>
+    </string-array>
+
+    <string-array name="lga_kogi">
+        <item>Adavi</item>
+        <item>Ajaokuta</item>
+        <item>Ankpa</item>
+        <item>Bassa</item>
+        <item>Dekina</item>
+        <item>Ibaji</item>
+        <item>Idah</item>
+        <item>Igalamela-Odolu</item>
+        <item>Ijumu</item>
+        <item>kabba/Bunu</item>
+        <item>Koton Karfe</item>
+        <item>Lokoja</item>
+        <item>Mopa-Muro</item>
+        <item>Ofu</item>
+        <item>Ogori/Magongo</item>
+        <item>Okehi</item>
+        <item>Okene</item>
+        <item>Olamaboro</item>
+        <item>Olama</item>
+        <item>Yagba East</item>
+        <item>Yagba West</item>
+    </string-array>
+
+    <string-array name="lga_sokoto">
+        <item>Binji</item>
+        <item>Bodinga</item>
+        <item>Dange-shnsi</item>
+        <item>Gada</item>
+        <item>Goronyo</item>
+        <item>Gudu</item>
+        <item>Gawabawa</item>
+        <item>Illela</item>
+        <item>Isa</item>
+        <item>Kware</item>
+        <item>Kebbe</item>
+        <item>Rabah</item>
+        <item>Sabon Birni</item>
+        <item>Shagari</item>
+        <item>Silame</item>
+        <item>Sokoto North</item>
+        <item>Sokoto South</item>
+        <item>Tambuwal</item>
+        <item>Tangaza</item>
+        <item>Wamako</item>
+        <item>Wurno</item>
+        <item>Yabo</item>
+    </string-array>
+
+    <string-array name="lga_taraba">
+        <item>Ardo Kola</item>
+        <item>Bali</item>
+        <item>Donga</item>
+        <item>Gashaka</item>
+        <item>Gassol</item>
+        <item>Ibi</item>
+        <item>Jalingo</item>
+        <item>Karim Lamido</item>
+        <item>Kurmi</item>
+        <item>Lau</item>
+        <item>Sardauna</item>
+        <item>Takum</item>
+        <item>Ussa</item>
+        <item>Wukari</item>
+        <item>Yorro</item>
+        <item>Zing</item>
+    </string-array>
+
+    <string-array name="lga_adamawa">
+        <item>Demsa</item>
+        <item>Fufore</item>
+        <item>Ganye</item>
+        <item>Girei</item>
+        <item>Gombi</item>
+        <item>Guyuk</item>
+        <item>Hong</item>
+        <item>Jada</item>
+        <item>Lamurde</item>
+        <item>Madagali</item>
+        <item>Maiha</item>
+        <item>Mayo-Belwa</item>
+        <item>Michika</item>
+        <item>Mubi North</item>
+        <item>Mubi South</item>
+        <item>Numan</item>
+        <item>Shelleng</item>
+        <item>Song</item>
+        <item>Toungo</item>
+        <item>Yola North</item>
+        <item>Yola South</item>
+    </string-array>
+
+    <string-array name="lga_nassarawa">
+        <item>Akwanga</item>
+        <item>Awe</item>
+        <item>Doma</item>
+        <item>Karu</item>
+        <item>Keana</item>
+        <item>Keffi</item>
+        <item>Kokona</item>
+        <item>Lafia</item>
+        <item>Nasarawa LG</item>
+        <item>Nassarawa-Eggon</item>
+        <item>Obi</item>
+        <item>Toto</item>
+        <item>Wamba</item>
+    </string-array>
+
+    <string-array name="lga_borno">
+        <item>Abadam</item>
+        <item>Askira/Uba</item>
+        <item>Bama</item>
+        <item>Bayo</item>
+        <item>Biu</item>
+        <item>Chibok</item>
+        <item>Damboa</item>
+        <item>Dikwa</item>
+        <item>Gobio</item>
+        <item>Guzamala</item>
+        <item>Gwoza</item>
+        <item>Hawul</item>
+        <item>Jere</item>
+        <item>Kaga</item>
+        <item>Kala/Balge</item>
+        <item>Konduga</item>
+        <item>Kukawa</item>
+        <item>Kwayar Kusar</item>
+        <item>Maiduguri</item>
+        <item>Mafa</item>
+        <item>Magumeri</item>
+        <item>Marte</item>
+        <item>Mobbar</item>
+        <item>Monguno</item>
+        <item>Ngala</item>
+        <item>Nganzai</item>
+        <item>Shani</item>
+    </string-array>
+
+    <string-array name="lga_niger">
+        <item>Agaie</item>
+        <item>Agwara</item>
+        <item>Bida</item>
+        <item>Borgu</item>
+        <item>Bosso</item>
+        <item>Edati</item>
+        <item>Gurara</item>
+        <item>Gbako</item>
+        <item>Katcha</item>
+        <item>Kontagora</item>
+        <item>Lapai</item>
+        <item>Lavun</item>
+        <item>Magama</item>
+        <item>Mariga</item>
+        <item>Mashegu</item>
+        <item>Minna</item>
+        <item>Mokwa</item>
+        <item>Munya</item>
+        <item>Paikoro</item>
+        <item>Rafi</item>
+        <item>Rijau</item>
+        <item>Shiroro</item>
+        <item>Suleja</item>
+        <item>Tafa</item>
+        <item>Wushishi</item>
+    </string-array>
+
+    <string-array name="lga_gombe">
+        <item>Akko</item>
+        <item>Billiri</item>
+        <item>Dukku</item>
+        <item>Funakaye-Bajoga</item>
+        <item>Gombe</item>
+        <item>Kaltungo</item>
+        <item>Nafada</item>
+        <item>Shongom</item>
+        <item>Yamaltu-Deba</item>
+        <item>Kontagora</item>
+        <item>Lapai</item>
+        <item>Lavun</item>
+        <item>Magama</item>
+        <item>Mariga</item>
+    </string-array>
+
+    <string-array name="lga_kaduna">
+        <item>Birnin-Gwari</item>
+        <item>Chikun</item>
+        <item>Giwa</item>
+        <item>Igabi</item>
+        <item>Ikara</item>
+        <item>Jaba</item>
+        <item>Jema'a</item>
+        <item>Kachia</item>
+        <item>Kaduna North</item>
+        <item>Kaduna South</item>
+        <item>Kagarko</item>
+        <item>Kajuru</item>
+        <item>Kaura</item>
+        <item>Kauru</item>
+        <item>Kubau</item>
+        <item>Kudan</item>
+        <item>Lere</item>
+        <item>Makarfi</item>
+        <item>Sabon-Gari</item>
+        <item>Sanga</item>
+        <item>Soba</item>
+        <item>Zangon-Kataf</item>
+        <item>Zaria</item>
+    </string-array>
+
+    <string-array name="lga_katsina">
+        <item>Bakori</item>
+        <item>Batagarawa</item>
+        <item>Batsari</item>
+        <item>Baure</item>
+        <item>Bindawa</item>
+        <item>Charanci</item>
+        <item>Dan Musa</item>
+        <item>Dandume</item>
+        <item>Danja</item>
+        <item>Daura</item>
+        <item>Dutsi</item>
+        <item>Dutsin-Ma</item>
+        <item>Faskari</item>
+        <item>Funtua</item>
+        <item>Ingawa</item>
+        <item>Jibia</item>
+        <item>Kafur</item>
+        <item>Kaita</item>
+        <item>Kankara</item>
+        <item>Kankia</item>
+        <item>Katsina</item>
+        <item>Kurfi</item>
+        <item>Kusada</item>
+        <item>Mai'Adua</item>
+        <item>Malumfashi</item>
+        <item>Mani</item>
+        <item>Mashi</item>
+        <item>Matazu</item>
+        <item>Musawa</item>
+        <item>Rimi</item>
+        <item>Sabuwa</item>
+        <item>Safana</item>
+        <item>Sandamu</item>
+        <item>Zango</item>
+    </string-array>
+
+    <string-array name="lga_kano">
+        <item>Ajingi</item>
+        <item>Albasu</item>
+        <item>Bagwai</item>
+        <item>Bebeji</item>
+        <item>Bichi</item>
+        <item>Bunkure</item>
+        <item>Dala</item>
+        <item>Dambatta</item>
+        <item>Dawakin Kudu</item>
+        <item>Dawakin Tofa</item>
+        <item>Doguwa</item>
+        <item>Fagge</item>
+        <item>Gabasawa</item>
+        <item>Garko</item>
+        <item>Garun Malam</item>
+        <item>Gaya</item>
+        <item>Gezawa</item>
+        <item>Gwale</item>
+        <item>Gwarzo</item>
+        <item>Kabo</item>
+        <item>Kano Municipal</item>
+        <item>Karaye</item>
+        <item>Kibiya</item>
+        <item>Kiru</item>
+        <item>Kumbotso</item>
+        <item>Kunci</item>
+        <item>kura</item>
+        <item>Madobi</item>
+        <item>Makoda</item>
+        <item>Minjibir</item>
+        <item>Nasarawa</item>
+        <item>Rano</item>
+        <item>Rimin Gado</item>
+        <item>Rogo</item>
+        <item>Shanono</item>
+        <item>Sumaila</item>
+        <item>Takai</item>
+        <item>Tarauni</item>
+        <item>Tofa</item>
+        <item>Tsanyawa</item>
+        <item>Tudun Wada</item>
+        <item>Ungogo</item>
+        <item>Warawa</item>
+        <item>Wudil</item>
+    </string-array>
+</resources>

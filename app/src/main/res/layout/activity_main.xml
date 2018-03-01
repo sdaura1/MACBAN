@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/body"
+    tools:context="com.example.shaheed.registrationapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/mybutton">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personalData"
+        android:text="@string/personal_data"
+        android:textSize="20sp"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:textColor="#000000"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:contentDescription="@string/my_image"
+        android:id="@+id/imageView"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_person_black_24dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:background="@drawable/mybutton"
+        android:id="@+id/snapBtn"
+        android:layout_gravity="center"
+        android:text="Snap Image"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:background="#ffffff"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_margin="16dp"
+                android:id="@+id/namesLinear">
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:hint="@string/first_name"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:id="@+id/editTextFirstName"/>
+
+            <EditText
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:hint="@string/surname"
+                android:layout_weight="1"
+                android:id="@+id/editTextSurname"
+                android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="0dp"
+                android:id="@+id/genstatus"
+                android:layout_below="@id/namesLinear"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/genderTxt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:textSize="20sp"
+                    android:id="@+id/statusTxt"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                android:id="@+id/genderLinear"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/genstatus">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/genderGetter"/>
+            <Spinner
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/genderSpinner"
+                android:layout_marginStart="4dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/statusGetter"/>
+
+            <Spinner
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:id="@+id/statusSpinner"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/dateLinear"
+                android:weightSum="2"
+                android:layout_margin="16dp"
+                android:layout_below="@id/genderLinear">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/dateofbirthGetter"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/datebtn"
+                    android:text="Date Of Birth"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/stateLinear"
+                android:weightSum="3"
+                android:layout_margin="16dp"
+                android:layout_below="@id/dateLinear">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State: "
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:id="@+id/stateTxt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/stateGetter"/>
+
+                <Spinner
+                    android:layout_width="155dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:id="@+id/stateSpinner"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/lgaLinear"
+                android:layout_margin="16dp"
+                android:weightSum="3"
+                android:layout_below="@id/stateLinear">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L. G. A: "
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:textSize="20sp"
+                    android:id="@+id/lgaTxt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/lgaGetter"/>
+
+                <Spinner
+                    android:layout_width="155dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:id="@+id/lgaSpinner"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lgaLinear"
+                android:layout_margin="16dp"
+                android:weightSum="2"
+                android:id="@+id/townLinear">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Town:"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/townTxt"/>
+
+                <EditText
+                    android:id="@+id/townEditText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/houseNoLinear"
+                android:layout_margin="16dp"
+                android:weightSum="3"
+                android:id="@+id/houseaddressLinear">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="House Address:"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/houseaddressTxt"/>
+
+                <EditText
+                    android:id="@+id/houseaddressEditText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/houseaddressLinear"
+                android:layout_margin="16dp"
+                android:weightSum="2"
+                android:id="@+id/occupationLinear">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Occupation:"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/occupationTxt"/>
+
+                <EditText
+                    android:id="@+id/occupationEditText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/townLinear"
+                android:layout_margin="16dp"
+                android:weightSum="3"
+                android:id="@+id/houseNoLinear">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="House No:"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/HouseNoTxt"/>
+
+                <EditText
+                    android:id="@+id/houseNoEditText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:inputType="numberDecimal"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/membershipData"
+            android:text="Membership Status"
+            android:textSize="20sp"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:textColor="#000000"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:background="#ffffff"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:weightSum="3"
+                android:id="@+id/rankLinear">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rank:"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/cellTxt"/>
+
+                <EditText
+                    android:id="@+id/rankEditText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_weight="2"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/memstateLinear"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:layout_below="@id/rankLinear">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State: "
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="8dp"
+                        android:textSize="20sp"
+                        android:id="@+id/memstateTxt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/memstateGetter"/>
+
+                    <Spinner
+                        android:layout_width="155dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:id="@+id/memstateSpinner"
+                        android:layout_marginStart="4dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/memlgaLinear"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:layout_below="@id/memstateLinear">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L. G. A: "
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="8dp"
+                        android:textSize="20sp"
+                        android:id="@+id/memlgaTxt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/memlgaGetter"/>
+
+                    <Spinner
+                        android:layout_width="155dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:id="@+id/memlgaSpinner"
+                        android:layout_marginStart="4dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:layout_below="@id/memlgaLinear"
+                    android:id="@+id/memTownLinear">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Town:"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:id="@+id/memTownTxt"/>
+
+                    <EditText
+                        android:id="@+id/memTownEditText"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_weight="2"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:layout_below="@id/memTownLinear"
+                    android:id="@+id/memcityLinear">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City:"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:id="@+id/memCityTxt"/>
+
+                    <EditText
+                        android:id="@+id/memCityEditText"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_weight="2"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:layout_below="@id/memcityLinear"
+                    android:id="@+id/memcellLinear">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number:"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:id="@+id/memcellTxt"/>
+
+                    <EditText
+                        android:id="@+id/memcellEditText"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_weight="2"
+                        android:inputType="phone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:layout_below="@id/memcellLinear"
+                    android:id="@+id/memOccupationLinear">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number:"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:id="@+id/memOccupationTxt"/>
+
+                    <EditText
+                        android:id="@+id/memOccupationEditText"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_weight="2"
+                        android:inputType="phone"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kinData"
+            android:text="Next Of Kin"
+            android:textSize="20sp"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:textColor="#000000"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:background="#ffffff"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="16dp"
+                android:id="@+id/kinNames"
+                android:weightSum="2">
+            <EditText
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:hint="@string/first_name"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:id="@+id/editTextKinFirstName"/>
+
+            <EditText
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:hint="@string/surname"
+                android:layout_weight="1"
+                android:id="@+id/editTextKinSurname"
+                android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="0dp"
+                    android:id="@+id/kingenstatus"
+                    android:layout_below="@id/kinNames"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:id="@+id/kingenderTxt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="8dp"
+                        android:textSize="20sp"
+                        android:id="@+id/kinstatusTxt"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="6"
+                    android:id="@+id/kingenderLinear"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@id/kingenstatus">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/kingenderGetter"/>
+                    <Spinner
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:id="@+id/kingenderSpinner"
+                        android:layout_marginStart="4dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/kinstatusGetter"/>
+
+                    <Spinner
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/kinstatusSpinner"
+                        android:layout_weight="1"
+                        android:layout_marginStart="4dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State: "
+                    android:textStyle="bold"
+                    android:layout_below="@id/kingenderLinear"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:layout_marginStart="170dp"
+                    android:id="@+id/kinstateTxt"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/kindateLinear"
+                    android:weightSum="5"
+                    android:layout_margin="16dp"
+                    android:layout_below="@id/kingenderLinear">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/kinstateGetter"/>
+
+                    <Spinner
+                        android:layout_width="155dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:id="@+id/kinstateSpinner"
+                        android:layout_marginStart="4dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/kinlgaLinear"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:layout_below="@id/kindateLinear">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L. G. A: "
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="8dp"
+                        android:textSize="20sp"
+                        android:id="@+id/kinlgaTxt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/kinlgaGetter"/>
+
+                    <Spinner
+                        android:layout_width="155dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:id="@+id/kinlgaSpinner"
+                        android:layout_marginStart="4dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kinlgaLinear"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:id="@+id/kintownLinear">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Town:"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:id="@+id/kintownTxt"/>
+
+                    <EditText
+                        android:id="@+id/kintownEditText"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_weight="2"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kintownLinear"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:id="@+id/kinHouseAddressLinear">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="House Address:"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:id="@+id/kinhouseAddressTxt"/>
+
+                    <EditText
+                        android:id="@+id/kinhouseAddressEditText"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_weight="2"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kinHouseAddressLinear"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:id="@+id/kinphoneLinear">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number:"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:id="@+id/kincellnumTxt"/>
+
+                    <EditText
+                        android:id="@+id/kincellnumEditText"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:inputType="phone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kinphoneLinear"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:id="@+id/kinRelationshipLinear">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Relationship:"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:id="@+id/kinRelationshipTxt"/>
+
+                    <EditText
+                        android:id="@+id/kinRelationshipEditText"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_weight="2"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kinRelationshipLinear"
+                    android:layout_margin="16dp"
+                    android:weightSum="3"
+                    android:id="@+id/kinOccupationLinear">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Occupation:"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:id="@+id/kinOccupationTxt"/>
+
+                    <EditText
+                        android:id="@+id/kinOccupationEditText"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_weight="2"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveBtn"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/mybutton"
+        android:text="Save"/>
+
+    </LinearLayout>
+</ScrollView>
