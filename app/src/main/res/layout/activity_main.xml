@@ -13,6 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
         android:background="@drawable/mybutton">
 
         <TextView
@@ -144,6 +146,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"
                 android:layout_below="@id/genstatus">
 
             <TextView
@@ -188,6 +191,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textStyle="bold|italic"
+                    android:textSize="20sp"
                     android:id="@+id/dateofbirthGetter"/>
 
                 <Button
@@ -195,7 +200,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:id="@+id/datebtn"
-                    android:text="Date Of Birth"/>
+                    android:background="@drawable/mybutton"
+                    android:text="Select Date Of Birth"/>
 
             </LinearLayout>
             <LinearLayout
@@ -748,26 +754,25 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="State: "
-                    android:textStyle="bold"
-                    android:layout_below="@id/kingenderLinear"
-                    android:gravity="center"
-                    android:textColor="#000"
-                    android:textSize="20sp"
-                    android:layout_marginStart="170dp"
-                    android:id="@+id/kinstateTxt"/>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:id="@+id/kindateLinear"
-                    android:weightSum="5"
+                    android:id="@+id/kinstateLinear"
+                    android:weightSum="3"
                     android:layout_margin="16dp"
                     android:layout_below="@id/kingenderLinear">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State: "
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:id="@+id/kinstateTxt"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -791,7 +796,7 @@
                     android:id="@+id/kinlgaLinear"
                     android:layout_margin="16dp"
                     android:weightSum="3"
-                    android:layout_below="@id/kindateLinear">
+                    android:layout_below="@id/kinstateLinear">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

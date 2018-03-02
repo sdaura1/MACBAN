@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         memlgaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         memlgaSpinner.setAdapter(memlgaAdapter);
 
-
+        reset();
 
         snapBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -747,39 +747,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.addnewMenu:
-
-                int[] image = new int[] {R.drawable.ic_person_black_24dp};
-
-                mImageView.setImageResource(image[0]);
-
-                firstName.setText("");
-                surName.setText("");
-                gendertxt.setText("");
-                statustxt.setText("");
-                houseNo.setText("");
-                houseAddr.setText("");
-                statetxt.setText("");
-                lgatxt.setText("");
-                occupation.setText("");
-                Town.setText("");
-
-                kinFirstName.setText("");
-                kinSurName.setText("");
-                kingendertxt.setText("");
-                kinstatustxt.setText("");
-                kinRelationship.setText("");
-                kinstatetxt.setText("");
-                kinlgatxt.setText("");
-                kinhouseaddress.setText("");
-                kinTown.setText("");
-                kinoccupation.setText("");
-                kinCell.setText("");
-
-                memCityEdt.setText("");
-                memTownEdt.setText("");
-                memstatetxt.setText("");
-                memlgatxt.setText("");
-                memOccupatioEdt.setText("");
+                reset();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -799,7 +767,41 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
     }
 
     private void setDate(final Calendar calendar){
-        final DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM);
+        final DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.YEAR_FIELD);
         DOBtxt.setText(dateFormat.format(calendar.getTime()));
+    }
+    public void reset(){
+        int[] image = new int[] {R.drawable.ic_person_black_24dp};
+
+        mImageView.setImageResource(image[0]);
+
+        firstName.setText("");
+        surName.setText("");
+        gendertxt.setText("");
+        statustxt.setText("");
+        houseNo.setText("");
+        houseAddr.setText("");
+        statetxt.setText("");
+        lgatxt.setText("");
+        occupation.setText("");
+        Town.setText("");
+
+        kinFirstName.setText("");
+        kinSurName.setText("");
+        kingendertxt.setText("");
+        kinstatustxt.setText("");
+        kinRelationship.setText("");
+        kinstatetxt.setText("");
+        kinlgatxt.setText("");
+        kinhouseaddress.setText("");
+        kinTown.setText("");
+        kinoccupation.setText("");
+        kinCell.setText("");
+
+        memCityEdt.setText("");
+        memTownEdt.setText("");
+        memstatetxt.setText("");
+        memlgatxt.setText("");
+        memOccupatioEdt.setText("");
     }
 }
