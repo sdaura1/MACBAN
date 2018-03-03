@@ -1,9 +1,12 @@
 package com.example.shaheed.registrationapp;
 
 import android.app.DatePickerDialog;
+import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -36,6 +39,11 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -47,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
     private static int REQUEST_IMAGE_CAPTURE = 1;
     ImageView mImageView;
+    private static final String FOLDER_NAME = "MACBAN";
     TextView gendertxt, statustxt, statetxt, lgatxt, kingendertxt, kinstatustxt, kinstatetxt, kinlgatxt, memstatetxt, memlgatxt, DOBtxt;
     private static final String TAG = "Post Fragment";
     FirebaseStorage fStorage;
@@ -607,7 +616,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                 memOccupation = memOccupatioEdt.getText().toString().trim();
 
                 if (firstNametxt.isEmpty() && surNametxt.isEmpty() && gndr.isEmpty() && Mstatus.isEmpty()
-                        && dobtxt.isEmpty() && houseNum.isEmpty() && houseAddress.isEmpty() && state.isEmpty()
+                        && dobtxt.isEmpty() && houseNum.isEmpty() && houseAddress.isEmpty() && state.isEmpty() && cellNo.isEmpty()
                         && lga.isEmpty() && mOccupation.isEmpty() && town.isEmpty() && kinFirstNametxt.isEmpty()
                         && kinSurNametxt.isEmpty() && kingender.isEmpty() && kinstatus.isEmpty() && kinstatus.isEmpty()
                         && kinrel.isEmpty() && kinstate.isEmpty() && kinlga.isEmpty() && kinhouseAd.isEmpty()
@@ -622,6 +631,8 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                             town, houseNum, houseAddress, mOccupation, kinFirstNametxt, kinSurNametxt,
                             kingender, kinstatus, kinstate, kinlga, kintown, kinhouseAd, kinCellNo, kinOccupation, kinrel, memStateStr, memLGAStr,
                             memTown, memCity, memOccupation);
+
+                    offlineStore();
                 }
             }
         });
@@ -803,5 +814,51 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         memstatetxt.setText("");
         memlgatxt.setText("");
         memOccupatioEdt.setText("");
+    }
+
+    public void offlineStore(){
+
+        FileOutputStream outputStream = null;
+
+        String file_name = firstNametxt + town + ".txt";
+
+        File mFile = new File(file_name);
+
+        try {
+            outputStream = openFileOutput(file_name, MODE_PRIVATE);
+            outputStream.write((firstNametxt + "\n" + surNametxt+ "\n" + gndr+ "\n" + Mstatus+"\n" +
+                    houseNum+ "\n" + houseAddress+ "\n" + state+ "\n" + lga+ "\n" + mOccupation+ "\n" + cellNo+ "\n" + town+ "\n" +
+
+                    kinFirstNametxt+ "\n" + kinSurNametxt+ "\n" + kingender+ "\n" + kinstatus+ "\n" + kinrel+ "\n" +
+                    kinstate+ "\n" + kinlga+ "\n" + kinhouseAd+ "\n" + kintown+ "\n" + kinOccupation+ "\n" + kinCellNo+ "\n" +
+
+
+                    memCity+ "\n" + memTown+ "\n" + memStateStr+ "\n" + memLGAStr+ "\n" + memOccupation+ "\n").getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                outputStream.close();
+            }catch (IOException i){
+                i.printStackTrace();
+            }
+        }
+
+        /*ContextWrapper cw = new ContextWrapper(this);
+        File path = cw.getDir(FOLDER_NAME, Context.MODE_PRIVATE);
+        if (!path.exists()) {
+            try {
+                path.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            path.mkdir();
+        }
+        File mypath=new File(path,"myfile.txt");
+        if (!mypath.exists()) {
+            outputStream = new OutputStreamWriter(openFileOutput( mypath.getAbsolutePath() , MODE_PRIVATE));
+            outputStream.write("test");
+            outputStream.close();
+        }*/
     }
 }
