@@ -13,6 +13,18 @@
     <string name="surname">Surname</string>
     <string name="first_name">First Name</string>
     <string name="save">Save</string>
+    <string name="gender">Gender</string>
+    <string name="status">Status</string>
+    <string name="select_date_of_birth">Select Date Of Birth</string>
+    <string name="state">State:</string>
+    <string name="l_g_a">L. G. A:</string>
+    <string name="town">Town:</string>
+    <string name="house_address">House Address:</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="occupation">Occupation:</string>
+    <string name="house_no">House No:</string>
+    <string name="next_of_kin">Next Of Kin</string>
+    <string name="relationship">Relationship:</string>
     <string-array name="gender_array">
         <item>Male</item>
         <item>Female</item>
