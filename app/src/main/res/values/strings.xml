@@ -12,6 +12,7 @@
     <string name="password_">Password</string>
     <string name="surname">Surname</string>
     <string name="first_name">First Name</string>
+    <string name="save">Save</string>
     <string-array name="gender_array">
         <item>Male</item>
         <item>Female</item>
@@ -39,11 +40,22 @@
     </string-array>
 
     <string-array name="states">
+        <item>Abia</item>
         <item>Adamawa</item>
-        <item>Baucho</item>
+        <item>Anambra</item>
+        <item>Akwa Ibom</item>
+        <item>Bauchi</item>
+        <item>Bayelsa</item>
         <item>Benue</item>
         <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item>Enugu</item>
+        <item>Edo</item>
+        <item>Ekiti</item>
         <item>Gombe</item>
+        <item>Imo</item>
         <item>Jigawa</item>
         <item>Kano</item>
         <item>Katsina</item>
@@ -51,13 +63,136 @@
         <item>Kebbi</item>
         <item>Kogi</item>
         <item>Kwara</item>
+        <item>Lagos</item>
         <item>Nassarawa</item>
         <item>Niger</item>
+        <item>Ogun</item>
+        <item>Ondo</item>
+        <item>Osun</item>
+        <item>Oyo</item>
         <item>Plateau</item>
+        <item>Rivers</item>
         <item>Sokoto</item>
         <item>Taraba</item>
         <item>Yobe</item>
         <item>Zamfara</item>
+    </string-array>
+
+    <string-array name="lga_zamfara">
+
+    </string-array>
+
+    <string-array name="lga_anambra">
+        <item>Aguata</item>
+        <item>Awka North</item>
+        <item>Awka South</item>
+        <item>Anambra East</item>
+        <item>Anambra West</item>
+        <item>Anaocha</item>
+        <item>Ayamelum</item>
+        <item>Dunukofia</item>
+        <item>Ekwusigo</item>
+        <item>Idemili North</item>
+        <item>Idemili South</item>
+        <item>Ihiala</item>
+        <item>Njikoka</item>
+        <item>Nnewi North</item>
+        <item>Nnewi South</item>
+        <item>Ogbaru</item>
+        <item>Onitsha North</item>
+        <item>Onitsha South</item>
+        <item>Orumba North</item>
+        <item>Orumba South</item>
+        <item>Oyi</item>
+    </string-array>
+
+    <string-array name="lga_bauchi">
+        <item>Alkaleri</item>
+        <item>Bauchi</item>
+        <item>Bogoro</item>
+        <item>Dass</item>
+        <item>Darazo</item>
+        <item>Damban</item>
+        <item>Ganjuwa</item>
+        <item>Gamawa</item>
+        <item>Giade</item>
+        <item>Itas (Gadau)</item>
+        <item>Jama'are</item>
+        <item>Kirfi</item>
+        <item>Katagum</item>
+        <item>Misau</item>
+        <item>Ningi</item>
+        <item>Shira</item>
+        <item>Tafawa Balewa</item>
+        <item>Toro</item>
+        <item>Warji</item>
+        <item>Zaki</item>
+    </string-array>
+
+    <string-array name="lga_akwaIbom">
+        <item>Abak</item>
+        <item>Eastern Obolo</item>
+        <item>Eket</item>
+        <item>Esit-Eket</item>
+        <item>Essien Udim</item>
+        <item>Etim-Ekpo</item>
+        <item>Etinan</item>
+        <item>Ibeno</item>
+        <item>Ibesikpo-Asutan</item>
+        <item>Ibiono-Ibom</item>
+        <item>Ika</item>
+        <item>Ikono</item>
+        <item>Ikot Abasi</item>
+        <item>Ikot Ekpene</item>
+        <item>Ini</item>
+        <item>Itu</item>
+        <item>Mbo</item>
+        <item>Mkpat-Enin</item>
+        <item>Nsit-Atai</item>
+        <item>Nsit-Ibom</item>
+        <item>Nsit-Ubium</item>
+        <item>Obot-Akara</item>
+        <item>Okobo</item>
+        <item>Onna</item>
+        <item>Oron</item>
+        <item>Oruk Anam</item>
+        <item>Ukanafun</item>
+        <item>Udung-Uko</item>
+        <item>Uruan</item>
+        <item>Urue-Offong/Oruko</item>
+        <item>Uyo</item>
+    </string-array>
+
+    <string-array name="lga_bayelsa">
+        <item>Brass</item>
+        <item>Ekeremor</item>
+        <item>Kolokuma</item>
+        <item>Nembe</item>
+        <item>Ogbia</item>
+        <item>Sagbama</item>
+        <item>Southern Ijaw</item>
+        <item>Yenagoa</item>
+    </string-array>
+
+    <string-array name="lga_crossRiver">
+        <item>Abi</item>
+        <item>Akamkpa</item>
+        <item>Akpabuyo</item>
+        <item>Bakassi</item>
+        <item>Bekwarra</item>
+        <item>Biase</item>
+        <item>Boki</item>
+        <item>Calabar Municipal</item>
+        <item>Calabar South</item>
+        <item>Etung</item>
+        <item>Ikom</item>
+        <item>Obanliku</item>
+        <item>Obubra</item>
+        <item>Obudu</item>
+        <item>Odukpani</item>
+        <item>Ogoja</item>
+        <item>Yakuur</item>
+        <item>Yala</item>
     </string-array>
 
     <string-array name="lga_kwara">
@@ -105,6 +240,227 @@
         <item>Vandeikya</item>
     </string-array>
 
+    <string-array name="lga_delta">
+        <item>Aniocha North</item>
+        <item>Aniocha South</item>
+        <item>Bomadi</item>
+        <item>Burutu</item>
+        <item>Ethiope East</item>
+        <item>Ethiope West</item>
+        <item>Ika North East</item>
+        <item>Ika South</item>
+        <item>Isoko North</item>
+        <item>Isoko South</item>
+        <item>Ndokwa East</item>
+        <item>Ndokwa West</item>
+        <item>Okpe</item>
+        <item>Oshimili North</item>
+        <item>Oshimili South</item>
+        <item>Patani</item>
+        <item>Sapele</item>
+        <item>Udu</item>
+        <item>Ughelli North</item>
+        <item>Ughelli South</item>
+        <item>Ukwuani</item>
+        <item>Uvwie</item>
+        <item>Warri North</item>
+        <item>Warri South</item>
+        <item>Warri South West</item>
+    </string-array>
+
+    <string-array name="lga_ebonyi">
+        <item>Abakaliki</item>
+        <item>Afikpo North</item>
+        <item>Afikpo South (Edda)</item>
+        <item>Ebonyi</item>
+        <item>Ezza North</item>
+        <item>Ezza South</item>
+        <item>Ikwo</item>
+        <item>Ishielu</item>
+        <item>Ivo</item>
+        <item>Izzi</item>
+        <item>Ohaozara</item>
+        <item>Ohaukwu</item>
+        <item>Onicha</item>
+    </string-array>
+
+    <string-array name="lga_enugu">
+        <item>Aninri</item>
+        <item>Awgu</item>
+        <item>Enugu East</item>
+        <item>Enugu North</item>
+        <item>Enugu South</item>
+        <item>Ezeagu</item>
+        <item>Igbo Etiti</item>
+        <item>Igbo Eze North</item>
+        <item>Igbo Eze South</item>
+        <item>Isi Uzo</item>
+        <item>Nkanu East</item>
+        <item>Nkanu West</item>
+        <item>Nsukka</item>
+        <item>Oji River</item>
+        <item>Odenu</item>
+        <item>Udi</item>
+        <item>Uzo-Uwani</item>
+    </string-array>
+
+    <string-array name="lga_edo">
+        <item>Akoko-Edo</item>
+        <item>Egor</item>
+        <item>Esan Central</item>
+        <item>Esan North-East</item>
+        <item>Esan South-East</item>
+        <item>Esan West</item>
+        <item>Etsako Central</item>
+        <item>Etsako East</item>
+        <item>Etsako West</item>
+        <item>Igueben</item>
+        <item>Ikpoba-Okha</item>
+        <item>Oredo</item>
+        <item>Orhionmwon</item>
+        <item>Ovia North-East</item>
+        <item>Ovia South-West</item>
+        <item>Owan East</item>
+        <item>Owan West</item>
+        <item>Uhunmwonde</item>
+    </string-array>
+
+    <string-array name="lga_ekiti">
+        <item>Ado-Ekiti</item>
+        <item>Ikere</item>
+        <item>Oye</item>
+        <item>Aiyekire (Gbonyin)</item>
+        <item>Efon</item>
+        <item>Ekiti East</item>
+        <item>Ekiti South-West</item>
+        <item>Ekiti West</item>
+        <item>Emure</item>
+        <item>Ido-Osi</item>
+        <item>Ijero</item>
+        <item>Ikole</item>
+        <item>Ilejemeje</item>
+        <item>Irepodun (Ifelodun)</item>
+        <item>Ise (Orun)</item>
+        <item>Moba</item>
+    </string-array>
+
+    <string-array name="lga_imo">
+        <item>Aboh Mbaise</item>
+        <item>Ahiazu Mbaise</item>
+        <item>Ehime Mbano</item>
+        <item>Ezinihitte Mbaise</item>
+        <item>Ideato North</item>
+        <item>Ideato South</item>
+        <item>Ihitte (Uboma)</item>
+        <item>Ikeduru</item>
+        <item>Isiala Mbano</item>
+        <item>Isu</item>
+        <item>Mbaitoli</item>
+        <item>Ngor Okpala</item>
+        <item>Njaba</item>
+        <item>Nkwerre</item>
+        <item>Nwangele</item>
+        <item>Obowo</item>
+        <item>Oguta</item>
+        <item>Ohaji (Egbema)</item>
+        <item>Okigwe</item>
+        <item>Onuimo</item>
+        <item>Orlu</item>
+        <item>Orsu</item>
+        <item>Oru East</item>
+        <item>Oru West</item>
+        <item>Owerri Municipal</item>
+        <item>Owerri North</item>
+        <item>Owerri West</item>
+    </string-array>
+
+    <string-array name="lga_lagos">
+        <item>Agege</item>
+        <item>Apapa</item>
+        <item>Alimosho</item>
+        <item>Ajeromi-Ifelodun</item>
+        <item>Amuwo-Odofin</item>
+        <item>Badagry</item>
+        <item>Eti-Osa</item>
+        <item>Epe</item>
+        <item>Ifako-Ijaye</item>
+        <item>Ikeja</item>
+        <item>Ikorodu</item>
+        <item>Ibeju-Lekki</item>
+        <item>Kosofe</item>
+        <item>Lagos Island</item>
+        <item>Lagos Mainland</item>
+        <item>Mushin</item>
+        <item>Ojo</item>
+        <item>Oshodi-Isolo</item>
+        <item>Shomolu</item>
+        <item>Surulere</item>
+    </string-array>
+
+    <string-array name="lga_ogun">
+        <item>Abeokuta North</item>
+        <item>Abeokuta South</item>
+        <item>Ado-Odo (Ota)</item>
+        <item>Ewekoro</item>
+        <item>Ifo</item>
+        <item>Ijebu East</item>
+        <item>Ijebu North</item>
+        <item>Ijebu North East</item>
+        <item>Ijebu Ode</item>
+        <item>Ikenne</item>
+        <item>Imeko Afon</item>
+        <item>Ipokia</item>
+        <item>Obafemi Owode</item>
+        <item>Odogbolu</item>
+        <item>Odeda</item>
+        <item>Ogun Waterside</item>
+        <item>Remo North</item>
+        <item>Sagamu</item>
+        <item>Egbado North (Yewa North)</item>
+        <item>Egbado South (Yewa South)</item>
+    </string-array>
+
+    <string-array name="lga_ondo">
+        <item>Akoko North-East</item>
+        <item>Akoko Norht-West</item>
+        <item>Akoko South-East</item>
+        <item>Akoko South-West</item>
+        <item>Akure North</item>
+        <item>Akure South</item>
+        <item>Ese Odo</item>
+        <item>Idanre</item>
+        <item>Ifedore</item>
+        <item>Ilaje</item>
+        <item>Ile Oluji (Okeigbo)</item>
+        <item>Irele</item>
+        <item>Odigbo</item>
+        <item>Okitipupa</item>
+        <item>Ondo East</item>
+        <item>Ondo West</item>
+        <item>Ose</item>
+        <item>Owo</item>
+    </string-array>
+
+    <string-array name="lga_abia">
+        <item>Aba North</item>
+        <item>Aba South</item>
+        <item>Arochukwu</item>
+        <item>Bende</item>
+        <item>Ikwuano</item>
+        <item>Isiala Ngwa North</item>
+        <item>Isiala Ngwa South</item>
+        <item>Isuikwuato</item>
+        <item>Obi Ngwa</item>
+        <item>Ohafia</item>
+        <item>Osisioma Ngwa</item>
+        <item>Ugwunagbo</item>
+        <item>Ukwa East</item>
+        <item>Ukwa West</item>
+        <item>Umuahia North</item>
+        <item>Umuahia South</item>
+        <item>Umu Nneochi</item>
+    </string-array>
+
     <string-array name="lga_yobe">
         <item>Bade</item>
         <item>Bursari</item>
@@ -123,6 +479,101 @@
         <item>Tarmua</item>
         <item>Yunusari</item>
         <item>Yusufari</item>
+    </string-array>
+
+    <string-array name="lga_osun">
+        <item>Aiyedaade</item>
+        <item>Aiyedire</item>
+        <item>Atakunmosa East</item>
+        <item>Atakunmosa West</item>
+        <item>Boluwaduro</item>
+        <item>Boripe</item>
+        <item>Ede North</item>
+        <item>Ede South</item>
+        <item>Egbedore</item>
+        <item>Ejigbo</item>
+        <item>Ife Central</item>
+        <item>Ife East</item>
+        <item>Ife North</item>
+        <item>Ife South</item>
+        <item>Ifedayo</item>
+        <item>Ifelodun</item>
+        <item>Ila</item>
+        <item>Ilesa East</item>
+        <item>Ilesa West</item>
+        <item>Irepodun</item>
+        <item>Irewole</item>
+        <item>Isokan</item>
+        <item>Iwo</item>
+        <item>Obokun</item>
+        <item>Odo Otin</item>
+        <item>Ola Oluwa</item>
+        <item>Olorunda</item>
+        <item>Oriade</item>
+        <item>Orolu</item>
+        <item>Osogbo</item>
+    </string-array>
+
+    <string-array name="lga_oyo">
+        <item>Akinyele</item>
+        <item>Afijio</item>
+        <item>Egbeda</item>
+        <item>Ibadan North</item>
+        <item>Ibadan North-East</item>
+        <item>Ibadan North-West</item>
+        <item>Ibadan South-West</item>
+        <item>Ibadan South-East</item>
+        <item>Ibapara Central</item>
+        <item>Ibapara East Eruwa</item>
+        <item>Ido</item>
+        <item>Irepo</item>
+        <item>Iseyin</item>
+        <item>Kajola</item>
+        <item>Lagelu</item>
+        <item>Ogbomosho North</item>
+        <item>Ogbomosho South</item>
+        <item>Oyo West</item>
+        <item>Atiba</item>
+        <item>Atisbo</item>
+        <item>Saki West</item>
+        <item>Saki East</item>
+        <item>Itesiwaju</item>
+        <item>Iwajowa</item>
+        <item>Ibapara North</item>
+        <item>Olorunsogo</item>
+        <item>Oluyole</item>
+        <item>Ogo Oluwa</item>
+        <item>Surulere</item>
+        <item>Orelope</item>
+        <item>Ori Ire</item>
+        <item>Oyo East</item>
+        <item>Ona Ara</item>
+    </string-array>
+
+    <string-array name="lga_rivers">
+        <item>Andoni</item>
+        <item>Asari-Toru</item>
+        <item>Akuku-Toru</item>
+        <item>Abua-Odual</item>
+        <item>Ahoada West</item>
+        <item>Ahoada East</item>
+        <item>Bonny</item>
+        <item>Degema</item>
+        <item>Eleme</item>
+        <item>Emohua</item>
+        <item>Etche</item>
+        <item>Gokana</item>
+        <item>Ikwerre</item>
+        <item>Khana</item>
+        <item>Obio-Akpor</item>
+        <item>Okrika</item>
+        <item>Ogu-Bolo</item>
+        <item>Oyigbo</item>
+        <item>Opodo-Nkoro</item>
+        <item>Ogba-Egbema-Ndoni</item>
+        <item>Omuma</item>
+        <item>Port Harcourt</item>
+        <item>Tai</item>
     </string-array>
 
     <string-array name="lga_jigawa">

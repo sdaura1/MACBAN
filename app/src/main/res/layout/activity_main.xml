@@ -334,7 +334,36 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/cellLinear"
+                android:layout_margin="16dp"
                 android:layout_below="@id/houseaddressLinear"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/cellTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Phone Number:"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/cellEditText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="phone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cellLinear"
                 android:layout_margin="16dp"
                 android:weightSum="2"
                 android:id="@+id/occupationLinear">
@@ -395,7 +424,7 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-        <TextView
+        <!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/membershipData"
@@ -433,7 +462,7 @@
                     android:layout_weight="1"
                     android:layout_marginTop="10dp"
                     android:textSize="20sp"
-                    android:id="@+id/cellTxt"/>
+                    android:id="@+id/rankTxt"/>
 
                 <EditText
                     android:id="@+id/rankEditText"
@@ -571,47 +600,19 @@
 
                 </LinearLayout>
 
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
                     android:weightSum="3"
                     android:layout_below="@id/memcityLinear"
-                    android:id="@+id/memcellLinear">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Phone Number:"
-                        android:textColor="#000"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:layout_marginTop="10dp"
-                        android:textSize="20sp"
-                        android:id="@+id/memcellTxt"/>
-
-                    <EditText
-                        android:id="@+id/memcellEditText"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:layout_weight="2"
-                        android:inputType="phone"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:weightSum="3"
-                    android:layout_below="@id/memcellLinear"
                     android:id="@+id/memOccupationLinear">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Phone Number:"
+                        android:text="Occupation:"
                         android:textColor="#000"
                         android:textStyle="bold"
                         android:layout_weight="1"
@@ -623,13 +624,12 @@
                         android:id="@+id/memOccupationEditText"
                         android:layout_width="130dp"
                         android:layout_height="wrap_content"
-                        android:ems="10"
                         android:layout_weight="2"
-                        android:inputType="phone"/>
+                        android:inputType="text"/>
 
                 </LinearLayout>
             </RelativeLayout>
-        </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>-->
 
         <TextView
             android:layout_width="wrap_content"
@@ -975,7 +975,87 @@
 
         </android.support.v7.widget.CardView>
 
-    <Button
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/registration_point"
+            android:text="Registration Point"
+            android:textSize="20sp"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:textColor="#000000"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:background="#ffffff"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/regPointStateText"/>
+
+                <Spinner
+                    android:layout_width="155dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:id="@+id/regPointStateSpinner"
+                    android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L. G. A"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/regPointlgaText"/>
+
+
+                <Spinner
+                    android:layout_width="155dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:id="@+id/regPointlgaSpinner"
+                    android:layout_marginStart="4dp"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>-->
+
+
+        <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/saveBtn"
@@ -983,7 +1063,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:background="@drawable/mybutton"
-        android:text="Save"/>
+            android:text="@string/save" />
 
     </LinearLayout>
 </ScrollView>
